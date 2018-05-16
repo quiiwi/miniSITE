@@ -27,8 +27,9 @@
 /* le haut de page */
 header{
     /* hauteur de l'élément */
-    height: 220px;
-    border: 10px solid white;
+    height: 4120000px; 
+    border: 1px solid white; 
+    background: url(../img/panorama.jpeg) center top /* no-repeat */;
 }
 
 /* le contenu principale */
@@ -67,8 +68,8 @@ footer{
 
 #wrapper{ /*l'emballage de toute la page*/
     width: 998px;
-    margin-top: 20px;
-    border: solid 1px black;
+    margin-top: 20px; 
+    border: solid 1px black; 
     margin-right: auto;
     margin-left: auto;
 }
