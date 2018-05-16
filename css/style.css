@@ -27,7 +27,7 @@
 /* le haut de page */
 header{
     /* hauteur de l'élément */
-    height: 4120000px; 
+    height: 412px; 
     border: 1px solid white; 
     background: url(../img/panorama.jpeg) center top /* no-repeat */;
 }
