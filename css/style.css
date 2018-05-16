@@ -11,6 +11,7 @@
 
 .fondrouge{
     background:red;
+    padding: 5px;
 }
 
 .fondvert{
@@ -19,6 +20,12 @@
 
 .fondbleu{
     background:blue;
+    /* padding: 5px; */
+}
+
+.fondbleu2{
+    background:blue;
+     padding: 5px; 
 }
 
 .fondviolet{
@@ -34,10 +41,25 @@ header{
 
 /* le contenu principale */
 #main{
-    background: rosybrown;
-    width: 699px;
+    background: green;
+    width: 679px;
     float: right;
-    height: auto;
+     padding: 10px; 
+    
+}
+#photoville{
+    height: 419px;
+    background: url(../img/aslan_san_gimignano.jpeg);
+}
+
+#photodésert{
+    background: url(../img/desert.jpeg);
+    height:489px;
+}
+
+#photoferrarri{
+    background: url(../img/ferrerrieretouchee.jpeg);
+    height: 457px;
 }
 
 /* la class pour tout metre dans le flux normal */
@@ -48,8 +70,9 @@ header{
 /* le côté de la page */
 aside{
     /* largeur de l'élément */
-    width: 299px;
+    width: 279px;
     float: left;
+    padding:10px
 }
 
 /* les styles de la page */
@@ -72,4 +95,28 @@ footer{
     border: solid 1px black; 
     margin-right: auto;
     margin-left: auto;
+}
+#navigation{
+    background: grey;
+
+    
+}
+#block01{
+     font-size: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 1px;
+    background: brown;
+}
+#block02{
+    font-size: 20px; 
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+      padding:10px;
+    background: blue;
+    /* margin-top: -10px; */
+}
+#block03{
+     font-size:30px; 
+     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding:20px; 
+    background: violet;
 }
