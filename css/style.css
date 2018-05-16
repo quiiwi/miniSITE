@@ -31,10 +31,24 @@ header{
     border: 10px solid white;
 }
 
+/* le contenu principale */
+#main{
+    background: rosybrown;
+    width: 699px;
+    float: right;
+    height: auto;
+}
+
+/* la class pour tout metre dans le flux normal */
+.clear {
+    clear:both;
+}
+
 /* le côté de la page */
 aside{
     /* largeur de l'élément */
-    width: 550px;
+    width: 299px;
+    float: left;
 }
 
 /* les styles de la page */
@@ -52,7 +66,7 @@ footer{
 }
 
 #wrapper{ /*l'emballage de toute la page*/
-    width: 1078px;
+    width: 998px;
     margin-top: 20px;
     border: solid 1px black;
     margin-right: auto;
