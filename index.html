@@ -2,8 +2,7 @@
 <html lang="fr">
 
     <head>
-        <!-- la feuille de style externe  avec une balise link-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> <!-- la feuille de style externe  avec une balise link-->
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
@@ -11,43 +10,47 @@
     </head>
 
     <body>
-        <!-- début de la div principale -->
-        <div>
+        <div id="wrapper"> <!-- début de la div principale -->
             <!-- les nouveautés du HTML 5 -->
-            <!-- en-tête de la page ou d'une division ou d'une section-->
-
-            <header class="fondvert">
+            <header class="fondvert"> <!-- en-tête de la page ou d'une division ou d'une section-->
                 <h1>Tête de la page ou d'une division ou d'une section</h1>
                 <p>Salut moi c'est kilic!</p>
                 <p>J'ai 22 ans</p>
             </header>
-
-            <!-- la navigation de la page -->
-            <nav class="fondorange">
-                <h2>Naviagation</h2>
-
-                <ul>
-                    <li>menu # 01</li>
-                    <li>menu # 02</li>
-                    <li>menu # 03</li>
-                    <li>menu # 04</li>
-                </ul>
-
-            </nav>
-
-            <!-- du contenu textuel -->
-            <article class="fondrouge">Contenu textuel</article>
-
-            <!-- pour une division sur le côté de la page -->
-            <aside class="fondbleu">Le côté de page</aside>
-            
-            <!-- le pied de page -->
-            <footer class="fondviolet">Pied de page</footer>
-
-
-            
-
-        </div>
+            <aside class="fondbleu"> <!-- pour une division sur le côté de la page -->
+                <h2>YolowSwagg</h2>
+                <nav class="fondorange"> <!-- la navigation de la page -->
+                    <h2>Naviagation</h2>
+                    <ul>
+                        <li>menu # 01</li>
+                        <li>menu # 02</li>
+                        <li>menu # 03</li>
+                        <li>menu # 04</li>
+                        <li>menu # 05</li>
+                        <li>menu # 06</li>
+                        <li>menu # 07</li>
+                        <li>menu # 08</li>
+                        <li>menu # 09</li>
+                        <li>menu # 10</li>
+                        <li>menu # 11</li>
+                        <li>menu # 12</li>
+                        <li>menu # 13</li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="main">
+                <article class="fondrouge"> <!-- Un article avec son h2 -->
+                    <h2>Titre de l'article</h2>
+                    <p class="fondbleu">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi unde, itaque illum         delectus explicabo deserunt a fuga blanditiis optio nam non corporis vero eos. Fugit  voluptatem illo earum iste.</p>
+                    <p class="fondviolet">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio reiciendis labore odit distinctio, vitae impedit aspernatur soluta exercitationem blanditiis alias eveniet veniam ea quas dolores sint perspiciatis esse unde quam!</p>
+                    <p class="fondorange">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil, sunt cupiditate tempora aliquid velit vel aut culpa, rerum modi temporibus, et debitis! Animi voluptates ipsum accusamus blanditiis, aperiam odit.</p>
+                    <p class="fondvert">J'aime <span class="fondviolet">bien </span>coder</p>
+                </article>
+            </div>
+            <footer class="fondviolet"> <!-- le pied de page -->
+                Pied de page
+            </footer> 
+        </div> <!-- fermeture wrapper -->
     </body>
 
 </html>
