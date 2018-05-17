@@ -27,6 +27,9 @@
     background:lightblue;
      padding: 5px; 
 }
+.fondbleu3{
+    background: aliceblue;
+}
 
 .fondviolet{
     background:chocolate;
@@ -41,7 +44,7 @@ header{
 
 /* le contenu principale */
 #main{
-    background: green;
+    background: lightblue;
     width: 679px;
     float: right;
      padding: 10px; 
@@ -91,14 +94,13 @@ footer{
 
 #wrapper{ /*l'emballage de toute la page*/
     width: 998px;
-    margin-top: 20px; 
-    border: solid 1px black; 
+    margin-top: 20px;   
     margin-right: auto;
     margin-left: auto;
 }
 
 #navigation{
-    background: grey;
+    background: lightblue;
 
     
 }
@@ -125,27 +127,37 @@ footer{
     background: rosybrown;
 }
 
+/* le tableau sur css ---------------------*/
+
 thead{
-    background: red;
+    background: blue;
     border: 1px solid black;
     
 }
 tbody{
-    background: lightcoral;
+    background: aliceblue;
     border: 1px solid black;
 }
 
 table{
-    border-collapse: collapse;
+     border-collapse: collapse; /* fusionne toutes les bordures */
 }
 
 td,th{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border: 2px solid white;
     padding: 3px;
 }
 tfoot{
-    background: red;
+    background: blue;
+}
+tr:hover{
+    background-color: red;
+}
+caption{
+    padding: 5px;
+    background: aliceblue;
+    caption-side: bottom;
+    border: 1px solid white;
 }
 
 
@@ -190,4 +202,26 @@ select{
     margin-top: 10px;
 }
 
+ /* testes des pseudo-classes ---------------------*/
 
+:any-link{
+    color: black;
+}
+
+input:focus{
+    color:blue;
+}
+
+input:link{
+    color: yellow;
+}
+
+:host{
+    color: blueviolet;
+}
+:empty{
+    color: lightgreen;
+}
+:active{
+    color: red;
+}
