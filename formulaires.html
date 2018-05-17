@@ -23,9 +23,9 @@
                         <li><a href="index.html" title="MiniSITE : Accueil">MiniSite : accueil</a></li>
                         <li><a href="photos.html" title="MiniSITE : Photos">MiniSite : photos</a></li>
                         <li><a href="textes.html" title="MiniSITE : Textes">MiniSite : textes</a></li>
-                        <li><a href="formulaires.html" title="MiniSITE : Formulaires">MiniSite : formulaires</a></li>
-                        <li><a href="" title="">MiniSite : manga</a></li>
-                        <li><a href="" title="">MiniSite : jeux</a></li>
+                        <li><a href="tableau.html" title="MiniSITE : Tableau">MiniSite : tableau</a></li>
+                        <li><a href="formulaires.html" title="MiniSITE : formulaire">MiniSite : formulaire</a></li>
+                        <li><a href="jeux.html" title="MiniSITE : Jeux">MiniSite : jeux</a></li>
                         <li><a href="" title="">MiniSite : videos</a></li>
                         <li><a href="" title="">MiniSite :</a></li>
                         <li><a href="" title="">MiniSite :</a></li>
@@ -37,13 +37,71 @@
                 </nav>
             </aside>
             <div id="main">
-                <article class="fondrouge"> <!-- Un article avec son h2 -->
-                    <h1>Titre de l'article</h1>
-                    <p class="fondbleu">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quasi unde, itaque illum         delectus explicabo deserunt a fuga blanditiis optio nam non corporis vero eos. Fugit  voluptatem illo earum iste.</p>
-                    <p class="fondbleu">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio reiciendis labore odit distinctio, vitae impedit aspernatur soluta exercitationem blanditiis alias eveniet veniam ea quas dolores sint perspiciatis esse unde quam!</p>
-                    <p class="fondbleu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil, sunt cupiditate tempora aliquid velit vel aut culpa, rerum modi temporibus, et debitis! Animi voluptates ipsum accusamus blanditiis, aperiam odit.</p>
-                    <p class="fondbleu">J'aime <span class="fondviolet">bien </span>coder</p>
-                </article>
+            
+                    <h2>Un premier formulaire</h2>
+                    
+                    <form><!-- je déclare un premier formulaire -->
+
+                        <label for="pseudo">Votre pseudo *</label> <!-- une étiquette pour le 1er champs du formulaire -->
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Tappez votre pseudo" required><!-- le premier champs du formulaire du text -->
+
+                        <label for="MDP">Mot de passe *</label> <!-- input pour un mot de passe -->
+                        <input type="password" name="MDP" id="MDP" placeholder="Votre Mot de Passe" required>
+
+                        <label for="Mail">Votre Adress électronique *</label>
+                        <input type="Mail" name="Mail" id="Mail" placeholder="Votre adresse éléctronique" required>
+
+                        <label for="name">Votre prénom</label>
+                        <input type="name" name="name" id="name" placeholder="Votre Prenom" >
+
+                        <label for="adresse">Votre adresse</label>
+                        <input type="adresse" name="adresse" id="adresse" placeholder="Votre adresse" >
+
+                        <!-- bouton pour envoyer le forulaire -->
+                        <input type="submit" name="inscription" value="Envoyer">
+                        <input type="reset" name="annulation" value="Annulez">
+
+                    </form> <h2>Un petit <em>sondage</em></h2> <p><small>Un autre formulaire</small></p>
+                    <form>
+                        <fieldset>
+                            <legend>A propos du CSS :</legend>
+                            <p>Savez-vous ce que veut dire <strong>CSS?</strong></p>
+
+                            <input type="radio" name="CSS" value="oui" checked><!-- des boutons radio le 1er est coché -->
+                            <label class="inline"  for="oui">Oui</label>
+
+                            <input type="radio" name="CSS" value="non"> 
+                            <label class="inline"  for="non">Non</label>
+
+                            <label for="utilise">Si oui, vous en servez-vous? :</label>
+                            <select name="utilise"><!-- select un menu déroulant ou liste déroulante avec ses options -->
+                                <option value="toujours">toujours</option>
+                                <option value="occasionnellement">occasionnellement</option>
+                                <option value="parfois">parfois</option>
+                                <option value="rarement">rarement</option>
+                                <option value="jamais">jamais</option>
+                            </select> 
+                        </fieldset>
+                        <fieldset>
+                            <legend>Vos coordonnées :</legend>
+
+                            <label for="email">Votre courriel :</label>
+                            <input type="email" name="email" size="25" placeholder="Votre courriel" required>
+
+                            <label for="commentaire1">Donnez-nous votre avis : *</label>
+                            <textarea name="commentaire" cols="30" rows="4" placeholder="Donnez votre avis sur le CSS" required></textarea>
+
+                        </fieldset>
+
+                        <p>
+                            <input name="Envoyez" type="submit" value="Envoyer votre réponse">
+                            <input name="Annulez" type="reset" value="Annulez">
+                        </p>
+
+                    </form>
+                    
+                    
+                    
             </div> <!--fermeture de la div main-->
             <div class="clear"></div>
             <footer class="fondviolet"> <!-- le pied de page -->

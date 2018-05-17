@@ -96,27 +96,96 @@ footer{
     margin-right: auto;
     margin-left: auto;
 }
+
 #navigation{
     background: grey;
 
     
 }
+
 #block01{
-     font-size: 10px;
-     font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     padding: 1px;
     background: brown;
 }
+
 #block02{
     font-size: 20px; 
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-      padding:10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    padding:10px;
     background: blue;
     /* margin-top: -10px; */
 }
+
 #block03{
-     font-size:30px; 
-     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size:30px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
     padding:20px; 
     background: rosybrown;
 }
+
+thead{
+    background: red;
+    border: 1px solid black;
+    
+}
+tbody{
+    background: lightcoral;
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid black;
+}
+tfoot{
+    background: red;
+}
+
+
+/* le formulaire sur le css------------------------- */
+form{
+    background:rgb(232, 232, 232);
+    padding: 10px;
+    width: 80%;
+}
+fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px dashed black;
+    width:  80%;
+}
+legend{
+    font-weight: 800px;
+    color:red;
+}
+label{
+    background: olivedrab;
+    color: aqua;
+    display: block; /* display:block; permet d'aller à la ligne automatiquement */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label.inline{
+    /* tout les labels qui ont la classe .inlane */
+    display: inline;
+    margin-right: 50px;
+}
+
+input, textarea,select{
+    /* pour styler plusieurs éléments et leur donner des attributs communs */
+    border: 2px solid black;
+    padding: 3px;
+    /* box-shadow: 2px 2px 2px gray inset; */
+    box-shadow: 2px 2px 2px gray;
+    
+}
+select{
+    margin-top: 10px;
+}
+
+
