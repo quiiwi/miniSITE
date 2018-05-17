@@ -204,24 +204,37 @@ select{
 
  /* testes des pseudo-classes ---------------------*/
 
-:any-link{
-    color: black;
+a:any-link /* couleur des liens */
+{
+    color: saddlebrown;
 }
 
-input:focus{
+input:focus /* lorsqu'un élément est choisit par l'utilisateur */
+{
     color:blue;
 }
 
-input:link{
-    color: yellow;
+:empty /* tout ce qui est vide */
+{
+    color: purple;
 }
 
-:host{
-    color: blueviolet;
-}
-:empty{
-    color: lightgreen;
-}
-:active{
+/* :active <------------celui la est super cheloux !!!!!
+{
     color: red;
+} */
+
+a:hover /* couleur des liens lorsqu'on passe dessus */
+{
+    color: goldenrod;
 }
+
+:indeterminate
+{
+    color:yellowgreen;
+}
+
+input:required /* la couleur des input qui sont obligés */
+{
+    color: brown;
+} 
