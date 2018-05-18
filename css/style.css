@@ -34,66 +34,55 @@
 .fondviolet{
     background:chocolate;
 }
-/* le haut de page */
-header{
-    /* hauteur de l'élément */
-    height: 412px; 
-    border: 1px solid white; 
-    background: url(../img/panorama.jpeg) center top /* no-repeat */;
+.clear {
+    clear:both;
 }
+.filetgauche{
+    border-left: 3px solid blue;
+}
+.cartouche{
+    border: 2px solid orange;
+    border-radius: 100px;
+    padding: 25px;
+}
+.fillergauche2{
+    border-left: 3px solid red;
+}
+.cartouche2{
+    border: 5px solid green;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* le haut de page */
+
 
 /* le contenu principale */
 #main{
     background: lightblue;
-    width: 679px;
+   /*  width: 679px; */
+   width: 879px;
     float: right;
-     padding: 10px; 
-    
+    padding: 10px;    
 }
+
 #photoville{
     height: 419px;
-    background: url(../img/aslan_san_gimignano.jpeg);
+    background: url(../img/aslan_san_gimignano.jpeg) no-repeat;
 }
 
 #photodésert{
-    background: url(../img/desert.jpeg);
+    background: url(../img/desert.jpeg) no-repeat;
     height:489px;
 }
 
 #photoferrarri{
-    background: url(../img/ferrerrieretouchee.jpeg);
+    background: url(../img/ferrerrieretouchee.jpeg) no-repeat;
     height: 457px;
 }
-
-/* la class pour tout metre dans le flux normal */
-.clear {
-    clear:both;
-}
-
-/* le côté de la page */
-aside{
-    /* largeur de l'élément */
-    width: 279px;
-    float: left;
-    padding:10px
-}
-
-/* les styles de la page */
-body{
-    margin: auto; /*la marge exterieur d'un élément*/
-    background-color: yellowgreen;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Le pied de page */
-footer{
-    height: 220px;
-    border: 10px solid goldenrod;
-
-}
-
 #wrapper{ /*l'emballage de toute la page*/
-    width: 998px;
+    /* width: 998px; */
+    width: 1198px;
     margin-top: 20px;   
     margin-right: auto;
     margin-left: auto;
@@ -101,6 +90,8 @@ footer{
 
 #navigation{
     background: lightblue;
+    padding: 10px;
+
 
     
 }
@@ -126,6 +117,51 @@ footer{
     padding:20px; 
     background: rosybrown;
 }
+#uldunavigateur{
+    border: 1px solid black;
+}
+
+/* la class pour tout metre dans le flux normal */
+
+/* le côté de la page */
+aside{
+    /* largeur de l'élément */
+    width: 279px;
+    float: left;
+    padding:10px
+}
+
+/* les styles de la page */
+body{
+    margin: auto; /*la marge exterieur d'un élément*/
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+header{
+    /* hauteur de l'élément */
+    height: 412px; 
+    border: 1px solid white; 
+    /* background: url(../img/panorama.jpeg) center top no-repeat; */
+    background: url(../img/panorama.jpeg) center top no-repeat , linear-gradient(lightblue,chocolate,red,yellow,purple,white, blue) ;
+}
+
+/* Le pied de page */
+footer{
+    height: 220px;
+    border: 10px solid goldenrod;
+
+}
+
+
 
 /* le tableau sur css ---------------------*/
 
@@ -209,12 +245,12 @@ a:any-link /* couleur des liens */
     color: saddlebrown;
 }
 
-input:focus /* lorsqu'un élément est choisit par l'utilisateur */
+input:focus /* lorsqu'un élement input non-required est choisit par l'utilisateur */
 {
     color:blue;
 }
 
-:empty /* tout ce qui est vide */
+:empty /* tous les input vide (*/
 {
     color: purple;
 }
@@ -234,7 +270,21 @@ a:hover /* couleur des liens lorsqu'on passe dessus */
     color:yellowgreen;
 }
 
-input:required /* la couleur des input qui sont obligés */
+input:required /* la couleur des input qui sont required */
 {
     color: brown;
 } 
+
+/* Essais-------------------------- */
+#divmain{
+    width:879px;
+    float: right;
+    padding: 10px;
+}
+
+/* Des variables ----------------------------------------- 
+pour les dégradés:
+linear-gradient(yellow, red);
+linear-gradient(to right,yellow, red);
+radian-gradient(,yellow, red);
+
