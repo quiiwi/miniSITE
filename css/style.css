@@ -4,7 +4,7 @@
 /* ma première feuille de style externe */
 
 /* des styles simples pour visualiser les div */
-
+/* Les class ----------------------------------------------------- */
 .fondorange{
     background:orange;
 }
@@ -37,21 +37,23 @@
 .clear {
     clear:both;
 }
-.filetgauche{
+
+/* Les ID -----------------------------------------------------------*/
+#filetgauche{
     border-left: 3px solid blue;
 }
-.cartouche{
+#cartouche{
     border: 2px solid orange;
     border-radius: 100px;
     padding: 25px;
 }
-.fillergauche2{
+#filetgauche2{
     border-left: 3px solid red;
 }
-.cartouche2{
-    border: 5px solid green;
-    border-radius: 50px;
-    padding: 10px;
+#cartouche2{
+    border: 2px solid green;
+    border-radius: 1000px;
+    padding: 25px;
 }
 
 /* le haut de page */
@@ -120,8 +122,13 @@
 #uldunavigateur{
     border: 1px solid black;
 }
+#divmain{
+    width:879px;
+    float: right;
+    padding: 10px;
+}
 
-/* la class pour tout metre dans le flux normal */
+/* la class pour tout mettre dans le flux normal ---------------------------------------------------- */
 
 /* le côté de la page */
 aside{
@@ -197,7 +204,7 @@ caption{
 }
 
 
-/* le formulaire sur le css------------------------- */
+/* le formulaire sur le css---------------------------------------------------- */
 form{
     background:rgb(232, 232, 232);
     padding: 10px;
@@ -238,7 +245,7 @@ select{
     margin-top: 10px;
 }
 
- /* testes des pseudo-classes ---------------------*/
+ /* testes des pseudo-classes ---------------------------------------------------*/
 
 a:any-link /* couleur des liens */
 {
@@ -276,11 +283,7 @@ input:required /* la couleur des input qui sont required */
 } 
 
 /* Essais-------------------------- */
-#divmain{
-    width:879px;
-    float: right;
-    padding: 10px;
-}
+
 
 /* Des variables ----------------------------------------- 
 pour les dégradés:

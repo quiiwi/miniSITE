@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>miniSITE : le Float</title>
+        <style>
+            body{
+                margin: 0 auto;
+                background-color: rgb(73, 3, 3);
+                color: aliceblue;
+            }
+            p{
+                background-color: lightcoral;
+                width: 50%;
+                border: 1px solid black;
+            }
+            div{
+                width: 90%;
+                margin: 0 auto;
+                background-color: rgb(228, 22, 22);
+                
+            }
+            .boite{
+                border: 5px double black;
+                width: 18vh;
+                height: 11vh;
+                padding: 5vh;
+                background: url(img/siamois.jpg);
+                background-repeat: no-repeat;
+                float: left;
+                margin: 2vh;
+            }
+            .clear{
+                clear: both;
+            }
+            .boite:hover{
+                margin-top: 1vh;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Le Float : introduction aux types de balises, block et inline</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores inventore odio omnis! Ex voluptas, eveniet perferendis pariatur animi facilis, maiores sint consectetur quibusdam porro quae, nostrum enim? Temporibus, doloremque quasi?</p>
+        <ul>
+            <li>Les éléments de type <strong>block</strong> <em>"bloc de citation"</em> : (h1, p, ul, ol, table, etc.)</li>
+            <li>Les éléments de type <strong>inline</strong> <em>"en-ligne"</em> : (a, img, strong, abbr, etc.)</li>
+        </ul>
+        <div>
+            <div class="boite">1</div>
+            <div class="boite">2</div>
+            <div class="boite">3</div>
+            <div class="boite">4</div>
+            <div class="boite">5</div>
+            <div class="boite">6</div>
+            <div class="boite">7</div>
+            <div class="boite">8</div>
+        </div>
+        <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores, consequatur fuga officia soluta animi eum eveniet aspernatur ducimus ab tenetur, repellat laudantium incidunt at minus. Ducimus modi mollitia deleniti!</p>
+        <footer>
+            <ul id="uldunavigateur">
+                <li><a href="index.html" title="MiniSITE : Accueil">MiniSite : accueil</a></li>
+                <li><a href="photos.html" title="MiniSITE : Photos">MiniSite : photos</a></li>
+                <li><a href="textes.html" title="MiniSITE : Textes">MiniSite : textes</a></li>
+                <li><a href="tableau.html" title="MiniSITE : Tableau">MiniSite : tableau</a></li>
+                <li><a href="formulaires.html" title="MiniSITE : formulaire">MiniSite : formulaire</a></li>
+                <li><a href="jeux.html" title="MiniSITE : Jeux">MiniSite : jeux</a></li>
+                <li><a href="video.html" title="MiniSITE : Vidéo">MiniSite : videos</a></li>
+                <li><a href="tableaumignon.html" title="MiniSITE : Mignon">MiniSite : mignon</a></li>
+                <li><a href="tableaubilbo.html" title="MiniSITE : Bilbo">MiniSite : bilbo</a></li>
+                <li><a href="bordures.html" title="MiniSITE : Bordures">MiniSite : bordures</a></li>
+                <li><a href="float.html" title="MiniSITE : Float">MiniSite : float</a></li>
+                <li><a href="damier.html" title="MiniSITE : Damier">MiniSite : damier</a></li>
+                <li><a href="" title="">MiniSite :</a></li>
+                <li><a href="" title="">MiniSite :</a></li>
+                <ol>
+                    <li><a href="cubitus1.html" title="MiniSITE : Cubitus 1">MiniSite : le cubitus 1</a></li>
+                    <li><a href="cubitus2.html" title="MiniSITE : Cubitus 2">MiniSite : le cubitus 2</a></li>
+                </ol>
+            </ul>
+        </footer>
+    </body>
+</html>
