@@ -1,0 +1,41 @@
+ a:any-link /* couleur des liens */
+{
+    color: saddlebrown;
+}
+
+input:focus /* lorsqu'un élement input non-required est choisit par l'utilisateur */
+{
+    color:blue;
+}
+
+:empty /* tous les input vide (*/
+{
+    color: purple;
+}
+
+/* :active <------------celui la est super cheloux !!!!!
+{
+    color: red;
+} */
+
+a 
+{
+    text-decoration: none;
+}
+
+a:hover /* couleur des liens lorsqu'on passe dessus */
+{
+    color: goldenrod;
+    background-color: black;
+    text-decoration: underline;
+}
+
+:indeterminate
+{
+    color:yellowgreen;
+}
+
+input:required /* la couleur des input qui sont required */
+{
+    color: brown;
+} 

@@ -1,0 +1,40 @@
+body{
+    background-color: chocolate;
+    font-family: 'PT Sans', sans-serif;
+}
+header{
+    background-color: lightgreen;
+}
+nav{
+    background-color: lightgoldenrodyellow;
+    float: left;
+    width: 1%;
+    height: 500px;
+}
+nav:hover p, nav:hover{
+    display: block;
+    width: 10%;
+}
+nav p{
+    display: none;
+}
+section{
+    background-color: lightblue;
+    float: left;
+    width: 40%;
+    height: 500px;
+}
+footer{
+    background-color: lightcoral;
+    clear: both;
+}
+footer, section, nav, header{
+    margin: 5px;
+    border: 3px solid black;
+}
+h1, h3{
+    padding: 5px;
+}
+header:hover{
+    display: block;
+}

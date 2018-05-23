@@ -4,6 +4,8 @@ body{
     radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
     #8a3;
     background-size: 20px 20px;
+    position: absolute;
+    top: 0;
 }
 .c1{
     background-color: green;
@@ -17,14 +19,14 @@ body{
     border-radius: 35% 0% 35% 0%;
 }
 .c2:hover{
-    background-color: lightskyblue;
+    background-color: aliceblue;
 }
 .c3{
     background-color: aquamarine;
     border-radius: 50%;
 }
 .c3:hover{
-    background-color: lightblue;
+    background-color: azure;
 }
 .c4{
     background-color: tomato ;
@@ -37,23 +39,23 @@ body{
     background-color: white;
     opacity: 0;
 }
-/*  .clear{
+.clear{
     clear: both;
-}  */
+}
 .c1,.c2,.c3,.c4,.cvide{
-    /* float: left; */
+    float: left; 
     height: 150px;
     width: 150px;
     margin: 15px;
     text-align: center;
     font-size: 50px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .c1,.c2,.c3,.c4{
     border: 5px solid black;
 }
 .yolo:hover{
-    background-color: brown;
+    background-color: tomato;
 }
 .yolo{
     background-color: red;

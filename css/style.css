@@ -37,6 +37,12 @@
 .clear {
     clear:both;
 }
+.ulyolo{
+    list-style-type: none;
+    list-style-image: url(../img/globe_fleche.png);
+    font-size: 25px;
+}
+
 
 /* Les ID -----------------------------------------------------------*/
 #filetgauche{
@@ -93,9 +99,7 @@
 #navigation{
     background: lightblue;
     padding: 10px;
-
-
-    
+    font-size: 25px;
 }
 
 #block01{
@@ -110,7 +114,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     padding:10px;
     background: blue;
-    /* margin-top: -10px; */
+    
 }
 
 #block03{
@@ -119,14 +123,35 @@
     padding:20px; 
     background: rosybrown;
 }
+
 #uldunavigateur{
     border: 1px solid black;
 }
+
 #divmain{
     width:879px;
     float: right;
     padding: 10px;
 }
+
+#survol:hover p{
+    display: block;
+}
+#survol p {
+    display: none;
+    background-color: coral;
+    padding: 20px;
+}
+
+#uldunavigateur{
+    list-style-type: none ;
+    list-style-image: url(../img/globe_fleche.png);
+}
+
+#uldunavigateur ul li{
+    list-style-type: none;
+}
+
 
 /* la class pour tout mettre dans le flux normal ---------------------------------------------------- */
 
@@ -137,6 +162,24 @@ aside{
     float: left;
     padding:10px
 }
+
+h1{
+    background-color: #008000;
+    text-transform: uppercase;
+}
+header h1 a {
+    text-decoration: none;
+}
+header h1{
+    background-color: aqua;
+    opacity: 0.5;
+}
+header h1{
+    text-align: center;
+    width: 140px;
+
+}
+
 
 /* les styles de la page */
 body{
@@ -161,6 +204,7 @@ header{
     background: url(../img/panorama.jpeg) center top no-repeat , linear-gradient(lightblue,chocolate,red,yellow,purple,white, blue) ;
 }
 
+
 /* Le pied de page */
 footer{
     height: 220px;
@@ -183,7 +227,7 @@ tbody{
 }
 
 table{
-     border-collapse: collapse; /* fusionne toutes les bordures */
+     border-collapse: collapse;
 }
 
 td,th{
@@ -194,7 +238,7 @@ tfoot{
     background: blue;
 }
 tr:hover{
-    background-color: red;
+    background-color: rosybrown;
 }
 caption{
     padding: 5px;
@@ -202,6 +246,20 @@ caption{
     caption-side: bottom;
     border: 1px solid white;
 }
+
+.t123 td:nth-child(2n+1) {
+    background-color: red;
+}
+
+ .t122 td:nth-child(2n+2) {
+    background-color: red;
+}
+
+
+
+
+
+
 
 
 /* le formulaire sur le css---------------------------------------------------- */
@@ -247,40 +305,45 @@ select{
 
  /* testes des pseudo-classes ---------------------------------------------------*/
 
-a:any-link /* couleur des liens */
-{
-    color: saddlebrown;
-}
-
-input:focus /* lorsqu'un élement input non-required est choisit par l'utilisateur */
-{
-    color:blue;
-}
-
-:empty /* tous les input vide (*/
-{
-    color: purple;
-}
-
-/* :active <------------celui la est super cheloux !!!!!
-{
+/* quand le lien n'est pas vidité */
+a:link {
     color: red;
-} */
+}
 
-a:hover /* couleur des liens lorsqu'on passe dessus */
-{
+/* quand le lien est visité */
+a:visited {
+    color: lightseagreen;
+}
+/* quand on survole le lien  */
+a:hover {
     color: goldenrod;
+    background-color: black;
+    text-decoration: underline;
 }
 
-:indeterminate
-{
-    color:yellowgreen;
+a{
+    text-decoration: none;
 }
 
-input:required /* la couleur des input qui sont required */
-{
-    color: brown;
-} 
+input:optional {
+    border-color: #008000;
+}  
+
+input:required {
+    border-color: #800000;
+}
+
+input:invalid {
+    background-color: chocolate
+}
+
+input:valid {
+    background-color: #008000;
+}
+
+
+
+
 
 /* Essais-------------------------- */
 

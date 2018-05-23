@@ -1,0 +1,32 @@
+body {
+    background-color: #ccff99;
+    font-family: 'PT Sans', sans-serif;
+    color: darkslategray;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+#contenu{
+    background-color: antiquewhite;
+    width: 770px;
+    margin: 0 auto;
+    border:  2px solid #ab4;
+    text-align: left;
+}
+#header h1{
+    height: 250px;
+    background-color: #ccff99;
+}
+a:link{
+    color: greenyellow;
+}
+a:visited{
+    color: chartreuse;
+}
+nav{
+    text-align: center;
+}
+nav ul li{
+    float: left;
+    width: 150px;
+}
