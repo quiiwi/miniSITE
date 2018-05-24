@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>KilicZoning</title>
+        <style>
+            /* body{
+                background-color:#556;
+                background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+                linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+                linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+                background-size:80px 140px;
+                background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+            } */ /* <------------------------ C'est pour toi Patrick*/
+            body{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #conteneur{
+                width: 960px;
+                display: block;
+                background-color: purple;
+                margin: 0 auto;
+            }
+            #header{
+                background-color: chocolate;
+                display: block;
+                height: 50px;
+                padding: 5px;
+            }
+            #menu{
+                background-color: darkgrey;
+                height: 50px;
+                padding: 5px;
+            }
+            #bPrincipale{
+                background:linear-gradient(cyan,yellow);
+                display: block;
+                height: 960px;
+            }
+            #footer{
+                background-color: brown;
+                height: 50px;;
+            }
+            article div div{
+                display: block;
+                height: 190px;
+                width: 190px;
+                border: 1px solid black;
+                margin: 10px;
+                border-radius: 20%;
+            }
+            article div div p{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            article div div p{
+                opacity: 0;
+            }
+            article div{
+                display: block;
+                height: 450px;
+                width: 450px;
+                border: 1px solid black;
+                float: left;
+                padding: 4px;
+                text-align: center;
+                border-radius: 10%;
+            }
+            .clear{
+                clear: both;
+            }
+            a:link{
+                color: black;
+            }
+            a:visited{
+                color: black;
+            }
+            #bS1{
+                background: red;
+                margin-left: 20px;
+                opacity: 0.7;
+            }
+            #bS1:hover{
+                opacity: 1;
+            }
+            #bS2{
+                background: radial-gradient(blue, cyan);
+                opacity: 0.7;
+            }
+            #bS2:hover{
+                opacity: 1;
+            }
+            #bS3{
+                background: linear-gradient(135deg, red, blue);
+                opacity: 0.7;
+            }
+            #bS3:hover{
+                opacity: 1;
+            }
+            #bS4{
+                background: linear-gradient(90deg, purple, red);
+                opacity: 0.7;
+            }
+            #bS4:hover{
+                opacity: 1;
+            }
+            #bS1, #bS2, #bS3, #bS4{
+                margin: 5px;
+            }
+            article div div:hover p{
+                opacity: 1;
+            }
+            #cube1{
+                background-color: brown;
+            }
+            #cube1:hover{
+                background-color: rgb(235, 55, 55);
+            }
+            #cube2{
+                background-color: crimson;
+            }
+            #cube2:hover{
+                background-color: rgb(255, 0, 51);
+            }
+            #cube3{
+                background-color: darkred;
+            }
+            #cube3:hover{
+                background-color: rgb(204, 1, 1);
+            }
+            #cube4{
+                background-color: violet;
+            }
+            #cube4:hover{
+                background-color: rgb(255, 100, 255);
+            }
+            #cube5{
+                background-color: aqua;
+            }
+            #cube5:hover{
+                background-color: rgb(52, 190, 190);
+            }
+            #cube6{
+                background-color: aquamarine;
+            }
+            #cube6:hover{
+                background-color: rgb(64, 253, 190);
+            }
+            #cube7{
+                background-color: cornflowerblue;
+            }
+            #cube7:hover{
+                background-color: rgb(121, 140, 177);
+            }
+            #cube8{
+                background-color: cyan;
+            }
+            #cube8:hover{
+                background-color: rgb(84, 158, 158);
+            }
+            #cube9{
+                background-color: crimson;
+            }
+            #cube9:hover{
+                background-color: rgb(199, 64, 91);
+            }
+            #cube10{
+                background-color: darkmagenta;
+            }
+            #cube10:hover{
+                background-color: rgb(155, 34, 155);
+            }
+            #cube11{
+                background-color: fuchsia;
+            }
+            #cube11:hover{
+                background-color: rgb(128, 24, 128);
+            }
+            #cube12{
+                background-color: lightcoral;
+            }
+            #cube12:hover{
+                background-color: rgb(185, 77, 77);
+            }
+            #cube13{
+                background-color: chartreuse;
+            }
+            #cube13:hover{
+                background-color: rgb(99, 170, 28);
+            }
+            #cube14{
+                background-color: darkgreen;
+            }
+            #cube14:hover{
+                background-color: rgb(6, 56, 6);
+            }
+            #cube15{
+                background-color: greenyellow;
+            }
+            #cube15:hover{
+                background-color: rgb(130, 196, 33);
+            }
+            #cube16{
+                background-color: darkolivegreen;
+            }
+            #cube16:hover{
+                background-color: rgb(59, 85, 14);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="conteneur">
+            <header id="header">zone du haut</header>
+            <nav id="menu">menu</nav>
+            <article id="bPrincipale">
+                <div id="bS1">
+                    <a href="https://www.youtube.com/watch?v=_f5spy3-9XM" title="Holly Holy" target="blank"><div id="cube1"><p>Holly Holy</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=LR1bWhdoIXM" title="Feeling Good" target="blank"><div id="cube2"><p>Feeling Good</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=q-dOfiJ3hpk" title="AMV HxH" target="blank"><div id="cube3" class="clear"><p>AMV HxH</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=PHdy9sr3-vo" title="Beast" target="blank"><div id="cube4"><p>Beast</p></div></a>
+                </div>
+                <div id="bS2">
+                    <a href="https://www.youtube.com/watch?v=gUjeFa5kS1Q" title="Killing Cause I'm Hungry" target="blank"><div id="cube5"><p>Killing Cause I'm Hungry</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=wQLS4nr6dSM" title="Best Montage Ever" target="blank"><div id="cube6"><p>Best Montage Ever</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=Ex8rd-joLpU" title="Hail to the King" target="blank"><div id="cube7"><p>Hail to the King</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=J-LQKgGU17c" title="Fight Back" target="blank"><div id="cube8"><p>Fight Back</p></div></a>
+                </div>
+                <div id="bS3" class="clear">
+                    <a href="https://www.youtube.com/watch?v=rrJFcC9qVpA" title="Cold and Bloody" target="blank"><div id="cube9"><p>Cold and Bloody</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=QYxpY-U37aY" title="I'm in the Zone" target="blank"><div id="cube10"><p>I'm in the Zone</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=WDPKoHgYGlQ" title="Remember the Name" target="blank"><div id="cube11"><p>Remeber the Name</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=31j4DIpgY9U" title="RIP BRAIN" target="blank"><div id="cube12"><p>RIP BRAIN</p></div></a>
+                </div>
+                <div id="bS4">
+                    <a href="https://www.youtube.com/watch?v=KMqZfwP6CUo" title="SAD 1" target="blank"><div id="cube13"><p>SAD 1</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=-gKpcj1N6ec" title="SAD 2" target="blank"><div id="cube14"><p>SAD 2</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=aTdcCIoiHdw" title="SAD 3" target="blank"><div id="cube15"><p>SAD 3</p></div></a>
+                    <a href="https://www.youtube.com/watch?v=YqFsyDn6b4c" title="SAD 4" target="blank"><div id="cube16"><p>SAD 4</p></div></a>
+                </div>
+            </article>
+            <footer id="footer">zone du bas</footer>
+        </div>
+    </body>
+</html>

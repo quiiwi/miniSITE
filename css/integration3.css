@@ -1,0 +1,94 @@
+body{
+    background-color: #ccff99;
+    font-family: 'PT Sans', sans-serif;
+    color: darkslategray;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+#conteneur{
+    width: 770px;
+    margin: 0 auto;
+    border: 2px solid #ab4;
+    background-color: #fff;
+    text-align: left
+}
+#header{
+    height: 250px;
+    background: url(../img/apple.jpg) no-repeat left top;
+    margin: 0;
+}
+/* la propriété display et la valeur block transforment le lien a inline en élément de type block on peut donc lui attribuer des propriétés de taille ; on positionne l'image de fond qui a les mêmes dimentions que le cadre ainsi crée */
+#header a{
+    width: 400px;
+    height: 70px;
+    background: url(../img/title.gif) no-repeat;
+    left: 350px;
+    display: block;
+    position: relative;
+    top: 15px;
+    /* le text-indent négatif est fait pour cacher le text au viisiteur (il est hors de la page) mais il est lu par les moteur de recherche */
+    text-indent: -5000px;
+}
+ul{
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    /* un petit décalage de -25px de haut */
+    background: url(../img/bg_menu.gif) repeat-x 0 -25px;
+    list-style-type: none;
+}
+/* on rends les li flottant pour les afficher horizontalement */
+li{
+    float: left;
+    text-align: center;
+}
+li a{
+    width: 130px; /*la largeur entre les block*/
+    display: block; /*en changeant la propriété des a en block on peut les dimentionner*/
+    line-height: 25px;/*espace entre les lignes*/
+    font-size: 1.2em; /* hauteur du text*/
+    font-weight: bold; /*text en gras*/
+    letter-spacing: 2px; /*espace entre les lettres*/
+    color: #fff; /*couleur du text*/
+    text-decoration: none;/* enlever le souslignement du text*/
+    border-right: 2px solid #ccff99;
+}
+li a:hover{
+    background: url(../img/bg_menu.gif) repeat-x 0 0px; /* on décale l'image au passage de la souris pour une impression de mouvement*/
+}
+/*le contenu principale*/
+#contenu {
+    padding: 0 30px 0 100px;
+    background-image: url(../img/bg_page.gif);
+    background-repeat: no-repeat;
+    background-position-x: 15px; /*horizontale*/
+    background-position-y: 15px; /*verticale*/
+}
+#contenu h2{
+    border-bottom: 1px solid #9b2; /*Bordure sous les h2*/
+    color: #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom;
+    padding-left: 25px;
+    line-height: 25px;
+    font-size: 1.4em;
+}
+#contenu p{
+    line-height: 1.7em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+blockquote{
+    color: #9b2;
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+    color: #8a0;
+}
+footer{
+    background: #ab4;
+}

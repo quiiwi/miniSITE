@@ -1,5 +1,6 @@
 body{
     background-color: aquamarine;
+    background: url(../img/siamois.jpg)
 }
 .c1,.c2{
     float: left;
