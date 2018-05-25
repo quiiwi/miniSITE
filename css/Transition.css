@@ -1,0 +1,19 @@
+body{
+    background: red;
+}
+.gauche{
+    border: 1px solid black;
+    margin: 0 auto;
+    float: left;
+    background: lightblue;
+}
+.droite{
+    border: 1px solid black;
+    margin: 0 auto;
+    float: left;
+    background: lightgreen;
+}
+.droite ul{
+    float: left;
+    list-style-type: none;
+}
