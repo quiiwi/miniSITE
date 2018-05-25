@@ -1,0 +1,82 @@
+body{
+    background: red;
+}
+#conteneur{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+header{
+    height: 50px;
+    border: 1px solid white;
+}
+nav{
+    height: 50px;
+    border: 1px solid blue;
+}
+footer{
+    height: 50px;
+    border: 1px solid yellow;
+}
+.yoyo{
+    height: 498px;
+    width: 498px;
+    float: left;
+    border: 1px solid white;
+}
+#carré{
+    height: 1000px;;
+}
+.toto{
+    height: 247px;
+    width: 247px;
+    float: left;
+    border: 1px solid black;
+}
+.titi{
+    height: 247px;
+    width: 247px;
+    border: 1px solid yellow;
+    float: left;
+}
+.tutu{
+    width: 495px;
+    height: 247px;
+    border: 1px solid blue;
+    float: left;
+}
+.ab{
+    background: url(../img/kiwi11.jpeg) no-repeat;
+    background-size: cover; /* 
+    -cover: permet d'étirer l'image pour qu'elle couvre toute la surface
+    -contain: convertit l'image pour la placer dans un carré
+    -width/heigth: modifier la taille manuellement
+    */
+}
+.bc{
+    background: url(../img/kiwi22.jpeg) no-repeat;
+}
+.cd{
+    background: url(../img/kiwi333.jpeg) no-repeat;
+}
+.de{
+    background: url(../img/kiwi444.jpeg) no-repeat;
+}
+.ef{
+    background: url(../img/kiwi100.jpeg) no-repeat;
+}
+.fg{
+    background: url(../img/kiwi666.jpg) no-repeat;
+}
+.gh{
+    background: url(../img/kiwi3222.jpeg) no-repeat;
+}
+.hi{
+    background: url(../img/KylieDay.jpg) no-repeat;
+}
+.ij{
+    background: url(../img/Zespri.jpg) no-repeat;
+}
+.IV{
+    background: url(../img/kiwi88.jpg) no-repeat;
+}
