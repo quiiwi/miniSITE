@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        table{
+            margin: 300px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 5px solid black;
+        }
+        td{
+            padding: 2px;
+            width: 400px;
+        }
+        body{
+            margin: 20px;
+            text-align: center;
+        }
+        table:hover{
+            transform: rotateZ(3600000deg);
+            transition-duration: 500s;
+        }
+        .blue{
+            color: blue;
+            background: red;
+        }
+        .yellow {
+            color: yellow;
+            background: blue;
+        }
+        .red{
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Un tableau avec des row fusionnées</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores animi illo provident incidunt, eos laudantium possimus non inventore maiores fuga. Sapiente minima veritatis fugiat, maiores quidem error molestiae quasi! Possimus!</p>
+    <table>
+        <tr class="blue">
+            <td><strong>Nom :</strong></td>
+            <td>André Bourvil</td>
+        </tr>
+        <tr class="yellow">
+            <td rowspan="2"><strong>Téléphone :</strong></td>
+            <td>Passy 78 54</td>
+        </tr>
+        <tr class="red">
+            <td>Camembert 78 55</td>
+        </tr>
+    </table>
+</body>
+</html>

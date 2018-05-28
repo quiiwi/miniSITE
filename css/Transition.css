@@ -62,8 +62,9 @@ ul{
 .droite .change ul:hover{
     background: linear-gradient(#d5d5d5,blue , #8a8a8a);
     cursor: pointer; /* changement de l'afficharge du curseur */
-    transform: scale(1.1); /* échelle de zoom */
-    transition-duration: 0.5s;
+  /*   transform: scale(1.1); */ /* échelle de zoom */
+    transition-duration: 50s;
+    transform: rotateZ(3600000deg);
 }
 .droite .change ul:hover li:first-child{ /* au survol de la souris on sélectionne le premier li de la ul ayant la class .change, elle-même enfant de la class .droite */
     background-color: #333;

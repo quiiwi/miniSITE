@@ -78,16 +78,54 @@
     height: 419px;
     background: url(../img/aslan_san_gimignano.jpeg) no-repeat;
 }
+/* #photoville:hover{
+    transform: scale(1.3)
+} */
 
 #photodésert{
     background: url(../img/desert.jpeg) no-repeat;
-    height:489px;
+    height:419px;
 }
-
+/* #photodésert:hover{
+    transform: scale(1.3)
+} */
+.yoloswaggy ul{
+    background: aliceblue;
+    padding-left: 10px;
+    float: right;
+    list-style-type: none;
+    display: block;
+    margin: 10px;
+    margin-top:60px;
+}
 #photoferrarri{
     background: url(../img/ferrerrieretouchee.jpeg) no-repeat;
-    height: 457px;
+    height: 419px;
 }
+/* #photoferrarri:hover{
+    transform: scale(1.3)
+} */
+#parispanoramique1{
+    background: url(../img/parispanoramique1.jpg) no-repeat;
+    height: 419px;
+}
+/* #parispanoramique1:hover{
+    transform: scale(1.3)
+} */
+#parispanoramique2{
+    background: url(..//img/parispanoramique2.jpg) no-repeat;
+    height: 419px;
+}
+/* #parispanoramique2:hover{
+    transform: scale(1.3)
+} */
+#parispanoramique3{
+    background: url(../img/parispanoramique3.jpg) no-repeat;
+    height: 419px;
+}
+/* #parispanoramique3:hover{
+    transform: scale(1.3)
+} */
 #wrapper{ /*l'emballage de toute la page*/
     /* width: 998px; */
     width: 1198px;
