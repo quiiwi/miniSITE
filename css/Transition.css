@@ -1,19 +1,71 @@
 body{
     background: red;
+    font-size: 1.3em;
+    font-family: sans-serif; /* sans serif ou sans empattement ou typo "bâton" */
 }
-.gauche{
-    border: 1px solid black;
-    margin: 0 auto;
-    float: left;
-    background: lightblue;
+/* couleurs des div */
+.couleur_une{
+    background: tomato;
 }
-.droite{
-    border: 1px solid black;
-    margin: 0 auto;
-    float: left;
-    background: lightgreen;
+.couleur_deux{
+    background: yellow ;
 }
-.droite ul{
-    float: left;
-    list-style-type: none;
+.change{
+    border: 2px thin white;
+}
+.clear{
+    clear: both;
+}
+/* charement des ul en tableaux */
+ul{
+    list-style: none; /* suppression des puces des li */
+    float: left; /* effet flottant à gauche */
+    margin: 0; /* marges exrérieures */
+    padding: 0; /* marges intérieures */
+}
+/* une marge haute pour les 2 classes gauches et droite */
+.gauche, .droite{
+    margin-top: 5em;
+}
+/* pour faire la 1ère colonne du tableau */
+/* les ul qui sont dans la dic .gauche */
+.gauche ul {
+    margin: 3.2em 0 0 0;
+}
+/* toutes les li de la ul ayant la class .gauche */
+.gauche ul li{
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+}
+/* premier li de la ul ayant la class .gauche */
+.gauche ul li:first-child{
+    border-top: 2px solid #ccc;
+}
+/* fin de la 1ere colonne */
+/* 2nde colonne */
+ ul.list li{ /*tous les li de la liste ul ayant la class .liste */
+    border-left: 1px solid #ccc;
+}
+.droite .change ul li{ /* tous les li de la liste il ayant la classe .change elle-même enfant de ma class .droite */
+    border-top:1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+.droite .change ul li:last-child{ /* le dernier li de la ul ayant la classe .change emme-même enfant de la classe .droite */
+    border-bottom: 1px solid #ccc;
+}
+/* effets de tansition au survol de la souris, animations css3 */
+.droite .change ul:hover{
+    background: linear-gradient(#d5d5d5,blue , #8a8a8a);
+    cursor: pointer; /* changement de l'afficharge du curseur */
+    transform: scale(1.1); /* échelle de zoom */
+    transition-duration: 0.5s;
+}
+.droite .change ul:hover li:first-child{ /* au survol de la souris on sélectionne le premier li de la ul ayant la class .change, elle-même enfant de la class .droite */
+    background-color: #333;
+    color: white;
 }
